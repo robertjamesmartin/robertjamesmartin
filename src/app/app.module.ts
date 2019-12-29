@@ -25,6 +25,8 @@ import { RequestLyricsComponent } from './components/request-lyrics/request-lyri
 import { RequestFictionComponent } from './components/request-fiction/request-fiction.component';
 import { FictionComponent } from './components/fiction/fiction.component';
 
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,6 +49,7 @@ import { FictionComponent } from './components/fiction/fiction.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
+    AngularFontAwesomeModule,
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
