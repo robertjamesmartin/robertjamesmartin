@@ -3,10 +3,6 @@
   height: 100%;
 }
 
-.headers {
-  text-align: center;
-}
-
 hr {
   border: 1px solid red;
   opacity: 0.3;
@@ -22,4 +18,9 @@ hr {
 
 .button-spacer {
   margin-top: 10px;
+}
+
+.chevron {
+  font-size: 40px;
+  color: red;
 }
