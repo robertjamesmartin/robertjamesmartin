@@ -26,6 +26,8 @@ import { RequestFictionComponent } from './components/request-fiction/request-fi
 import { FictionComponent } from './components/fiction/fiction.component';
 
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { MemoryComponent } from './components/memory/memory.component';
+import { MoneyTalksBullshitWalksComponent } from './components/money-talks-bullshit-walks/money-talks-bullshit-walks.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     RequestPoetryComponent,
     RequestLyricsComponent,
     RequestFictionComponent,
-    FictionComponent
+    FictionComponent,
+    MemoryComponent,
+    MoneyTalksBullshitWalksComponent
   ],
   imports: [
     BrowserModule,

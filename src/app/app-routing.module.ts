@@ -15,6 +15,9 @@ import { RequestLyricsComponent } from './components/request-lyrics/request-lyri
 import { RequestPoetryComponent } from './components/request-poetry/request-poetry.component';
 import { RequestFictionComponent } from './components/request-fiction/request-fiction.component';
 
+import { MemoryComponent } from './components/memory/memory.component';
+import { MoneyTalksBullshitWalksComponent } from './components/money-talks-bullshit-walks/money-talks-bullshit-walks.component';
+
 // Import canActivate guard services
 import { AuthGuard } from "./shared/guard/auth.guard";
 import { SecureInnerPagesGuard } from "./shared/guard/secure-inner-pages.guard";
@@ -34,6 +37,8 @@ const routes: Routes = [
   { path: 'request-lyrics', component: RequestLyricsComponent },
   { path: 'request-poetry', component: RequestPoetryComponent },
   { path: 'request-fiction', component: RequestFictionComponent },
+  { path: 'memory', component: MemoryComponent },
+  { path: 'money-talks-bullshit-walks', component: MoneyTalksBullshitWalksComponent },
 ];
 
 @NgModule({

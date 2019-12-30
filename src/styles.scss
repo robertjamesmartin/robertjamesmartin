@@ -21,6 +21,20 @@ hr {
 }
 
 .chevron {
-  font-size: 40px;
+  font-size: 35px;
   color: red;
+}
+
+.poetry-text {
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.card {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px;
 }
