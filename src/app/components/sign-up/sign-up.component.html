@@ -1,45 +1,35 @@
-<div class="displayTable">
-  <div class="displayTableCell">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
 
-    <div class="authBlock">
-      <h3>Sign Up</h3>
-
-      <div class="formGroup">
-        <input type="email" class="formControl" placeholder="Email Address" #userEmail required>
+    </div>
+    <div class="col-sm-4">
+      <h3 class="category-header">Sign Up</h3>
+      <hr />
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Email Address" #userName required>
       </div>
 
-      <div class="formGroup">
-        <input type="password" class="formControl" placeholder="Password" #userPwd required>
+      <div class="form-group">
+        <input type="password" class="form-control" placeholder="Password" #userPassword required>
       </div>
 
-      <div class="formGroup">
-        <input type="button" class="btn btnPrimary" value="Sign Up" (click)="authService.SignUp(userEmail.value, userPwd.value)">
+      <!-- Calling SignIn Api from AuthService -->
+      <div class="form-group">
+        <input type="button" class="btn btn-danger btn-block btn-small" value="Log in" (click)="authService.SignUp(userEmail.value, userPwd.value)">
       </div>
 
-      <!--<div class="formGroup">
-        <span class="or"><span class="orInner">Or</span></span>
-      </div>-->
+      <div class="button-spacer">
+        <button type="button" class="btn btn-block btn-danger btn-small" routerLink="/forgot-password">Forgot Password?</button>
+      </div>
 
-      <!-- Continue with Google -->
-      <!--<div class="formGroup">
-        <button type="button" class="btn googleBtn" (click)="authService.GoogleAuth()">
-          <i class="fab fa-google-plus-g"></i>
-          Continue with Google
-        </button>
-      </div>-->
+      <div>
+        <p class="button-spacer category-header">Already have an account?</p>
+        <button type="button" class="btn btn-block btn-danger btn-small" routerLink="/sign-in">Sign In</button>
+      </div>
+    </div>
+    <div class="col-sm-4">
 
-    <!-- Continue with Facebook -->
-    <!--<div class="formGroup">
-      <button type="button" class="btn facebookBtn" (click)="authService.FacebookAuth()">
-        <i class="fab fa-facebook"></i>
-        Continue with Facebook
-      </button>
-    </div>-->
+    </div>
   </div>
-
-  <div class="redirectToLogin">
-    <span>Already have an account? <span class="redirect" routerLink="/sign-in">Log In</span></span>
-  </div>
-</div>
-
 </div>
