@@ -15,6 +15,25 @@ import { RequestLyricsComponent } from './components/request-lyrics/request-lyri
 import { RequestPoetryComponent } from './components/request-poetry/request-poetry.component';
 import { RequestFictionComponent } from './components/request-fiction/request-fiction.component';
 
+// CRUD Poetry
+import { CreatePoetryComponent } from './components/create-poetry/create-poetry.component';
+import { ViewPoetryComponent } from './components/view-poetry/view-poetry.component';
+import { EditPoetryComponent } from './components/edit-poetry/edit-poetry.component';
+import { ListPoetryComponent } from './components/list-poetry/list-poetry.component';
+
+// CRUD Lyrics
+import { CreateLyricsComponent } from './components/create-lyrics/create-lyrics.component';
+import { ViewLyricsComponent } from './components/view-lyrics/view-lyrics.component';
+import { EditLyricsComponent } from './components/edit-lyrics/edit-lyrics.component';
+import { ListLyricsComponent } from './components/list-lyrics/list-lyrics.component';
+
+// CRUD Fiction
+import { CreateFictionComponent } from './components/create-fiction/create-fiction.component';
+import { ViewFictionComponent } from './components/view-fiction/view-fiction.component';
+import { EditFictionComponent } from './components/edit-fiction/edit-fiction.component';
+import { ListFictionComponent } from './components/list-fiction/list-fiction.component';
+
+
 import { MemoryComponent } from './components/memory/memory.component';
 import { MoneyTalksBullshitWalksComponent } from './components/money-talks-bullshit-walks/money-talks-bullshit-walks.component';
 
@@ -39,6 +58,18 @@ const routes: Routes = [
   { path: 'request-fiction', component: RequestFictionComponent },
   { path: 'memory', component: MemoryComponent },
   { path: 'money-talks-bullshit-walks', component: MoneyTalksBullshitWalksComponent },
+  { path: 'create-poetry', component: CreatePoetryComponent, canActivate: [AuthGuard] },
+  { path: 'view-poetry', component: ViewPoetryComponent, canActivate: [AuthGuard] },
+  { path: 'edit-poetry', component: EditPoetryComponent, canActivate: [AuthGuard] },
+  { path: 'list-poetry', component: ListPoetryComponent, canActivate: [AuthGuard] },
+  { path: 'create-lyrics', component: CreateLyricsComponent, canActivate: [AuthGuard] },
+  { path: 'view-lyrics', component: ViewLyricsComponent, canActivate: [AuthGuard] },
+  { path: 'edit-lyrics', component: EditLyricsComponent, canActivate: [AuthGuard] },
+  { path: 'list-lyrics', component: ListLyricsComponent, canActivate: [AuthGuard] },
+  { path: 'create-fiction', component: CreateFictionComponent, canActivate: [AuthGuard] },
+  { path: 'view-fiction', component: ViewFictionComponent, canActivate: [AuthGuard] },
+  { path: 'edit-fiction', component: EditFictionComponent, canActivate: [AuthGuard] },
+  { path: 'list-fiction', component: ListFictionComponent, canActivate: [AuthGuard] },
 ];
 
 @NgModule({
